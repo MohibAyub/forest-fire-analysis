@@ -1,19 +1,19 @@
-var options = {
-  series: [{
-  name: 'Series 1',
-  data: [80, 50, 30, 40, 100, 20],
-}],
-  chart: {
-  width: '65%',
-  type: 'radar',
-},
-title: {
-  text: 'Basic Radar Chart'
-},
-xaxis: {
-  categories: ['January', 'February', 'March', 'April', 'May', 'June']
-}
-};
+data = [{
+  type: 'scatterpolar',
+  r: [40, 50, 10, 20, 40],
+  theta: ['RH', 'Temperature', 'Rain', 'Wind', 'RH'],
+  fill: 'toself'
+}]
 
-var radchart = new ApexCharts(document.querySelector("#radchart"), options);
-radchart.render();
+layout = {
+  title: 'Influential Map of Natural Features',
+  polar: {
+    radialaxis: {
+      visible: true,
+      range: [0, 50]
+    }
+  },
+  showlegend: false
+}
+
+Plotly.newPlot("radchart", data, layout)

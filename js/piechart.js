@@ -1,10 +1,10 @@
 var options = {
-    series: [44, 55, 13, 43, 22],
+    series: [91.1, 8.9],
     chart: {
     type: 'pie',
     width: '50%'
-  },
-  labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+  }, title: {text: 'Percentage of Small Fires v/s Large Fires'},
+  labels: ['Small Fires', 'Large Fires',],
   responsive: [{
     breakpoint: 480,
     options: {
@@ -16,7 +16,8 @@ var options = {
       }
     }
   }]
-  };
+  
+};
 
   var piechart = new ApexCharts(document.querySelector("#piechart"), options);
   piechart.render();

@@ -80,14 +80,14 @@ function addDraggableMarker(map, behavior){
 function addCircleToMap(map){
   map.addObject(new H.map.Circle(
 
-    {lat: 41.887388, lng: -6.738568},
+    {lat: 41.8948890136854,  lng: -6.914544677734369},
 
-    5500,
+    5000,
     {
       style: {
         strokeColor: 'rgba(255, 0, 0, 0.6)',
         lineWidth: 2,
-        fillColor: 'rgba(255, 0, 0, 0.5)' 
+        fillColor: 'rgba(255, 0, 0, 0.7)' 
       }
     }
   ));
@@ -96,9 +96,9 @@ function addCircleToMap(map){
 function addCircleToMap1(map){
   map.addObject(new H.map.Circle(
     
-    {lat: 41.888149, lng: -6.924434},
+    {lat: 41.92708139836941, lng: -7.035394287109369},
     
-    2500,
+    2000,
     {
       style: {
         strokeColor: 'rgba(255, 0, 0, 0.6)', 
@@ -112,9 +112,9 @@ function addCircleToMap1(map){
 function addCircleToMap2(map){
   map.addObject(new H.map.Circle(
       
-    {lat: 41.794792, lng: -6.548872},
+    {lat: 41.894377892557095, lng: -6.618600463867182},
       
-    1500,
+    2600,
     {
       style: {
         strokeColor: 'rgba(255, 0, 0, 0.6)', 
@@ -125,6 +125,85 @@ function addCircleToMap2(map){
   ));
 }
 
+function addCircleToMap3(map){
+  map.addObject(new H.map.Circle(
+      
+    {lat: 41.8872217672825,  lng: -6.545129394531244},
+      
+    3000,
+    {
+      style: {
+        strokeColor: 'rgba(255, 0, 0, 0.6)', 
+        lineWidth: 2,
+        fillColor: 'rgba(255, 85, 0, 0.8)'  
+      }
+    }
+  ));
+}
+
+function addCircleToMap4(map){
+  map.addObject(new H.map.Circle(
+      
+    {lat: 41.87137320843928, lng: -7.180963134765619},
+      
+    2500,
+    {
+      style: {
+        strokeColor: 'rgba(255, 0, 0, 0.6)', 
+        lineWidth: 2,
+        fillColor: 'rgba(255, 140, 0, 0.5)'  
+      }
+    }
+  ));
+}
+
+function addCircleToMap5(map){
+  map.addObject(new H.map.Circle(
+      
+    {lat: 41.83403688357699, lng: -6.645379638671869},
+      
+    2200,
+    {
+      style: {
+        strokeColor: 'rgba(255, 0, 0, 0.6)', 
+        lineWidth: 2,
+        fillColor: 'rgba(255, 140, 0, 0.5)'  
+      }
+    }
+  ));
+}
+
+function addCircleToMap6(map){
+  map.addObject(new H.map.Circle(
+      
+    {lat: 41.84119896364786,  lng: -6.534829711914057},
+      
+    3800,
+    {
+      style: {
+        strokeColor: 'rgba(255, 0, 0, 0.6)', 
+        lineWidth: 2,
+        fillColor: 'rgba(255, 85, 0, 0.8)'  
+      }
+    }
+  ));
+}
+
+function addCircleToMap7(map){
+  map.addObject(new H.map.Circle(
+      
+    {lat: 41.75827444683398,  lng: -6.657739257812494},
+      
+    5200,
+    {
+      style: {
+        strokeColor: 'rgba(255, 0, 0, 0.6)', 
+        lineWidth: 2,
+        fillColor: 'rgba(255, 0, 0, 0.7)'  
+      }
+    }
+  ));
+}
 
 var platform = new H.service.Platform({
   app_id: 'devportal-demo-20180625',
@@ -154,3 +233,8 @@ addDraggableMarker(map, behavior);
 addCircleToMap(map);
 addCircleToMap1(map);
 addCircleToMap2(map);
+addCircleToMap3(map);
+addCircleToMap4(map);
+addCircleToMap5(map);
+addCircleToMap6(map);
+addCircleToMap7(map);
